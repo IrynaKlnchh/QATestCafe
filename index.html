@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QATestcafe — кав'ярня</title>
+  <!-- Підключаємо файл зі стилями -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайту -->
+  <header class="header">
+    <a href="#" class="logo">QATestcafe</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Головний банер -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Кава без багів</h1>
+        <p>Свіжа кава та смачні десерти щодня з 8:00 до 21:00.</p>
+        <a href="#order" class="button">Замовити столик</a>
+      </div>
+      <img src="img/cup.svg" alt="Чашка гарячої кави">
+    </section>
+
+    <!-- Про нас -->
+    <section id="about" class="section">
+      <h2>Про нас</h2>
+      <div class="about">
+        <img src="img/interior.svg" alt="Інтер'єр кав'ярні">
+        <div>
+          <p>QATestcafe — затишна кав'ярня для тих, хто любить <strong>якісну каву</strong> і спокійну атмосферу.</p>
+          <p>Ми тестуємо кожну чашку, перш ніж подати її вам. <em>Жодного багу в капучино!</em></p>
+          <h3>Чому обирають нас:</h3>
+          <ul>
+            <li>свіжообсмажене зерно</li>
+            <li>безкоштовний Wi-Fi</li>
+            <li>розетки біля кожного столика</li>
+            <li>знижка 10% для студентів</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="section">
+      <h2>Меню</h2>
+      <table>
+        <tr>
+          <th>Напій</th>
+          <th>Об'єм</th>
+          <th>Ціна</th>
+        </tr>
+        <tr>
+          <td>Еспресо</td>
+          <td>30 мл</td>
+          <td>45 грн</td>
+        </tr>
+        <tr>
+          <td>Американо</td>
+          <td>200 мл</td>
+          <td>55 грн</td>
+        </tr>
+        <tr>
+          <td>Капучино</td>
+          <td>250 мл</td>
+          <td>70 грн</td>
+        </tr>
+        <tr>
+          <td>Лате</td>
+          <td>350 мл</td>
+          <td>80 грн</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Як зробити замовлення -->
+    <section class="section">
+      <h2>Як замовити каву з собою</h2>
+      <ol>
+        <li>Оберіть напій у меню.</li>
+        <li>Зателефонуйте нам або заповніть форму.</li>
+        <li>Заберіть каву через 5 хвилин.</li>
+      </ol>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="reviews" class="section">
+      <h2>Відгуки</h2>
+      <div class="reviews">
+        <blockquote>
+          <p>Найкращий капучино в місті! Приходжу сюди працювати щодня.</p>
+          <cite>— Марія</cite>
+        </blockquote>
+        <blockquote>
+          <p>Дуже затишно, приємний персонал і смачні круасани.</p>
+          <cite>— Олег</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Форма бронювання -->
+    <section id="order" class="section">
+      <h2>Забронювати столик</h2>
+      <form class="form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+380" required>
+
+        <label for="guests">Кількість гостей:</label>
+        <select id="guests" name="guests">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4 і більше</option>
+        </select>
+
+        <label for="message">Побажання:</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+
+        <button type="submit" class="button">Забронювати</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Підвал сайту -->
+  <footer id="contacts" class="footer">
+    <h2>Контакти</h2>
+    <address>
+      м. Київ, вул. Тестувальників, 1<br>
+      Телефон: <a href="tel:+380501234567">+380 50 123 45 67</a><br>
+      Email: <a href="mailto:hello@qatestcafe.ua">hello@qatestcafe.ua</a>
+    </address>
+    <hr>
+    <p>&copy; 2026 QATestcafe. Усі права захищені.</p>
+  </footer>
+
+</body>
+</html>

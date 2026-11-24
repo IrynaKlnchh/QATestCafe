@@ -1,0 +1,243 @@
+/* ===== Загальні стилі ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3B2620;
+  background-color: #FAF7F4;
+}
+
+h1, h2, h3 {
+  color: #3B2620;
+}
+
+a {
+  color: #6F4E37;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===== Шапка ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #3B2620;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F2A541;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #F2A541;
+}
+
+/* ===== Головний банер ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #EDE6DE;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 15px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.hero img {
+  width: 280px;
+}
+
+/* ===== Кнопка ===== */
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #6F4E37;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #F2A541;
+  color: #3B2620;
+}
+
+/* ===== Секції ===== */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section h2 {
+  font-size: 32px;
+  border-bottom: 3px solid #F2A541;
+  display: inline-block;
+}
+
+/* Про нас */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+/* ===== Таблиця меню ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #EDE6DE;
+}
+
+th {
+  background-color: #6F4E37;
+  color: #FFFFFF;
+}
+
+tr:hover td {
+  background-color: #FAF0E4;
+}
+
+/* ===== Відгуки ===== */
+.reviews {
+  display: flex;
+  gap: 20px;
+}
+
+blockquote {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-left: 5px solid #F2A541;
+}
+
+cite {
+  color: #8A7566;
+}
+
+/* ===== Форма ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.form label {
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #B8A99A;
+  border-radius: 5px;
+}
+
+.form .button {
+  margin-top: 20px;
+}
+
+/* ===== Підвал ===== */
+.footer {
+  padding: 30px 40px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #3B2620;
+}
+
+.footer h2 {
+  color: #F2A541;
+}
+
+.footer a {
+  color: #F2A541;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #6F4E37;
+  margin: 20px 0;
+}
+
+/* ===== Адаптивність для телефонів ===== */
+@media (max-width: 768px) {
+  .header,
+  .hero,
+  .about,
+  .reviews {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+}
